@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(87, 54, 87);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(43, 20, 43);
+    padding: 20px;
+    color: white;
+}
+
+header p{
+    justify-content: end;
+}
