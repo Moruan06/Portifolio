@@ -2,29 +2,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --cor-secundária: #5500AE;
+    --cor-base: #1f102e;
+    --cor-bg: #fff;
+    --body-font: "Poppins", sans-serif;
+    --z-fixed: 100;
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor-bg);
+    font-family: var(--body-font);
+    color: var(--cor-base);
 }
 
 header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+.nav{  
     display: flex;
-    box-shadow: 0 1px 4px rgba(46, 50, 54, 0.20);
     padding: 20px;
-    color: rgb(0, 0, 0);
-    position: sticky;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--cor-bg);
 }
 
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position:   -webkit-sticky;
-    position: sticky;
     top: 0;
 }
   
@@ -33,26 +49,97 @@ li {
 }
   
 li a {
-    color: white;
-    text-decoration: none;
-}
-
-header a{
+    color: var(--cor-base);
     margin-left: 50px;
-    font-weight: lighter;
     font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
+    font-weight: 300;
 }
 
-.ativo{
-    color: rgb(115, 0, 255);
+li a:hover{
+    color: var(--cor-secundária);
 }
 
 header h1{
     font-size: 1.5rem;
 }
 
-img{
-    width: 20px;
+.apresentacao i{
+    font-size: 2rem;
+    margin: 32px;
+    color: var(--cor-base);
+}
+
+.apresentacao i:hover{
+    color: var(--cor-secundária);
+}
+
+.conteudo{
+    padding-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apresentacao h1{
+    font-size: 3rem;
+}
+
+.matar{
+    color: var(--cor-secundária);
+}
+
+.apresentacao p{
+    font-size: 1.7rem;
+}
+
+.blob-view{
+    width: 30%;
+    fill: var(--cor-secundária);
+}
+
+.eu{
+    width: 100%;
+}
+
+.sobre + .habilidades + .formacao + .contato{
+    justify-content: center;
+    align-items: center;
+}
+
+.titulosecao{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;  
+    text-decoration: underline 3px #7c02ff;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.sobre img{
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: end;
+} 
+
+.sobre{
+    display: grid;
+    justify-items: center;
+}
+
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.sobreconteudo{
+    row-gap: 2rem;
+    
+    text-align: center;
 }
