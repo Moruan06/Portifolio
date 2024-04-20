@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,16 +18,16 @@
             <h1>Portifólio</h1>
             <div class="links">
                 <ul>
-                    <li><a href="index.html" class="ativo">Home</a></li>
-                    <li><a href="contato.html">Sobre</a></li>
-                    <li><a href="contato.html">Habilidades</a></li>
-                    <li><a href="contato.html">Formação</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidade">Habilidades</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </header><br>
-    <div class="conteudo">
+    <div class="conteudo" id="home">
         <div class="apresentacao">
             <h1>Moruan Rabeih <span class="matar">Matar</span></h1>
             <p>Estudante de Ciência da Computação na UVV</p>
@@ -44,22 +44,134 @@
             </g>
         </svg>
     </div>
-        <div class="sobre">
-            <h2 class="titulosecao">Sobre</h2>
-            <div class="bd-grid sobreconteudo">
-            <img src="imagens/foto-sobre 2.jpeg" alt="">
-            <p>Eu sou um universitário de 17 anos, sociável e de rápida apredizagem, com experiências profissionais em algumas empresas fora da área de TI. Tenho facilidade em trabalhar com grupos e normalmente ajudo a organizar as ideias de todos.</p>
-            
+    <div class="sobre" id="sobre">
+        <h2 class="titulosecao">Sobre</h2>
+        <div class="bd-grid sobreconteudo">
+        <p>Sou um universitário de 17 anos, sociável e de rápida apredizagem, com experiências profissionais em algumas empresas fora da área de TI. Tenho facilidade em trabalhar com grupos e normalmente ajudo a organizar as ideias de todos.</p>  
+    ,</div>
+    </div>
+    <div class="habilidades" id="habilidade">
+        <h2 class="titulosecao">Habilidades</h2>
+        <div class="bd-grid habilidadescontainer">
+            <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"></span>80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-data skills__icon' ></i>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__sql">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">20%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-terminal skills__icon'></i>
+                                <span class="skills__name">C</span>
+                            </div>
+                            <div class="skills__bar skills__c">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">30%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI DESIGN</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">55%</span>
+                            </div>
+                        </div>
+                    </div>
         </div>
     </div>
-    <div class="habilidades">
-        <h2 class="titulosecao">Habilidades</h2>
-    </div>
-    <div class="formacao">
+    <div class="formacao" id="formacao">
         <h2 class="titulosecao">Formação</h2>
+        <div class="bd-grid formacaocontainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Duração</th>
+                        <th>Aprendizado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alura</td>
+                        <td>1 Ano</td>
+                        <td>Html/Css</td>
+                    </tr>
+                    <tr>
+                        <td>Microlins</td>
+                        <td>6 mesees</td>
+                        <td>Infomática geral</td>
+                    </tr>
+                    <tr>
+                        <td>Uvv</td>
+                        <td>...</td>
+                        <td>SQL/C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="contato">
+    <section class="contato" id="contato">
         <h2 class="titulosecao">Contatos</h2>
-    </div>
+        <div class="bd-grid contatocontainer">
+            <form action="contato">
+                <input type="text" placeholder="Nome" class="input"><br>
+                <input type="email" placeholder="Email" class="input" ><br>
+                <textarea name="mensagem"class="input" cols="0" rows="10"></textarea><br>
+                <input type="button" value="Enviar" id="botao">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h2>Moruan Matar</h2>
+        <div class="email">
+            <i class="bx bx-envelope"></i>
+            <span>moruan.mattar@gmail.com</span>
+        </div>
+        <div class="phone">
+            <i class="bx bxs-phone"></i>
+            <span>+55 (27) 99920-6934</span>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/moruan_matar/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.facebook.com/moruan.matar?locale=pt_BR" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
